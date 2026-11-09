@@ -1,3 +1,4 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import { Footer } from "@/components/site/Footer";
@@ -29,7 +30,7 @@ export default function App() {
 // Wrapper transisi ringan
 function RouteTransition({ children }: { children: React.ReactNode }) {
   return (
-    <div className="animate-fade-in duration-500">
+    <div className="animate-fade-in">
       {children}
     </div>
   );
